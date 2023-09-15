@@ -1,0 +1,35 @@
+@import '../../../utils/_mixins/_colors.module';
+
+.headerContainer {
+    margin-left: 6.625rem;
+    margin-right: 6.625rem;
+    height: 4rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    @include media-breakpoint-down(ds) {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .headerLogoContainer {
+        background-color: $white;
+        border-radius: 0.5rem 0.5rem 0 0;
+        margin-top: 1rem;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+}

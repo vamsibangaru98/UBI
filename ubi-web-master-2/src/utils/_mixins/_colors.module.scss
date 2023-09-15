@@ -1,0 +1,110 @@
+@import './mixins';
+
+
+/* Digital Neutrals */
+$black: #000000;
+$white: #ffffff;
+/*Primary Colors*/
+$primary: (
+  'redInteractive':#D13730,
+  'blueInteractive': #100D90
+);
+/*Greyscale Colors*/
+$greyscale:(
+  'dark':#0E0E1D,
+  'g5':#282833,
+  'g4':#4A4a54,
+  'g3':#8e8e94,
+  'g2':#d9d9d9,
+  'g1':#f3f3f3
+);
+/*Primary hues*/
+$primaryHues:(
+  'r5':#8A1620,
+  'r4':#cc414e,
+  'r3':#dd4e5b,
+  'r2':#F46672,
+  'r1':#FF909A,
+  'b5':#060452,
+  'b4':#0e0c7a,
+  'b3':#201d99,
+  'b2':#3735c2,
+  'b1':#5350ec
+);
+/*Visualisation colors*/
+$visualisation:(
+  'ocean':#266571,
+  'mauve':#B6B5ff,
+  'mustard':#F4bb40,
+  'cyan':#00b7eb,
+  'flamingo':#ffc0d0,
+  'olive':#f0f6f3,
+  'frost':#ededff,
+  'satin':#fef9e1,
+  'ice':#ebfcff,
+  'salt':#fff1f5
+);
+/*Gradient Colors*/
+$gradient:(
+  'horizonTop':#D13730,
+  'horizonBottom':#100d90,
+  'sunsetTop':#ff8989,
+  'sunsetBottom':#ffae95,
+  'silverTop':#c6c6c6,
+  'silverBottom':#ffffff,
+  'midnightTop':#201d99,
+  'midnightBottom':#5350ec
+);
+/*Snow Screen Background*/
+$snowScreen:(
+  'light':#f0f4fa,
+  'dark':#12162c
+);
+/*Sand Screen Background*/
+$sandScreen:(
+  'light':#ffefea,
+  'rust':#bb3d16,
+  'dark':#510a10
+);
+/*Accent Colors*/
+$accent:(
+  'citrus':#ffe600,
+  'lime':#04c900,
+  'meteor':#fe0850, 
+  'magenta':#ff0020,
+  'info-blue':#1e50a6 
+);
+/*Scrims Colors*/
+$scrims:(
+  'overlay':#0e0e1d
+);
+
+$neutral: (
+  '900': #232323,
+  '800': #363636,  /* rgba(0,0,0,0.79) */
+  '700': #505050,  /* rgba(0,0,0,0.69) */
+  '600': #6e6e6e,  /* rgba(0,0,0,0.57) */
+  '500': #8f8f8f,
+  '400': #c0c0c0,  /* rgba(0,0,0,0.25) */
+  '300': #d4d4d4,
+  '200': #e6e6e6,
+  '150': #ecf0f1,
+  '100': #f1f1f1,
+  '50': #f6f6f6,
+  '25': #fafafa
+);
+
+:export {
+  black: $black;
+  white: $white;
+  @include mapObject('neutral', $neutral);
+  @include mapObject('primary', $primary);
+  @include mapObject('greyscale', $greyscale);
+  @include mapObject('primaryHues', $primaryHues);
+  @include mapObject('visualisation', $visualisation);
+  @include mapObject('gradient', $gradient);
+  @include mapObject('snowScreen', $snowScreen);
+  @include mapObject('sandScreen', $sandScreen);
+  @include mapObject('accent', $accent);
+  @include mapObject('scrims', $scrims);
+}

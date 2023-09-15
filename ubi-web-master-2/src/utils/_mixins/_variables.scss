@@ -1,0 +1,18 @@
+// Global settings
+//
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  ds: 1024px,
+  lg: 1280px,
+  xl: 1440px,
+);
+
+
+

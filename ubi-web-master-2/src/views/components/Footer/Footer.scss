@@ -1,0 +1,22 @@
+@import '../../../utils/_mixins/_colors.module';
+
+.footerContainer {
+    height: 6rem;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0E0E1D;
+    margin-top: 1rem;
+
+    a {
+        color: $white;
+        padding-left: 1.25rem;
+        font-size: 0.688rem;
+    }
+
+    .footerCopyrights {
+        color: $white;
+        font-size: 0.688rem;
+        margin-top: 1.25rem;
+    }
+
+}

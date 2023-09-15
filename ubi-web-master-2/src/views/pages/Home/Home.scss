@@ -1,0 +1,54 @@
+@import '../../../utils/_mixins/mixins';
+@import '../../../utils/_mixins/variables';
+
+.homeContainer {
+    margin-left: 6.625rem;
+    margin-right: 6.625rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    @include media-breakpoint-down(ds) {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .homeContainerImage {
+        margin-top: 2rem;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 0px;
+        }
+        svg {
+            width: 100%;
+            height: 340px;
+        }
+    }
+
+    .homeContainerLoginBox{
+        
+        margin-top: 2rem;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 0px;
+        }
+        .MuiPaper-root{
+            height: 300px;
+            border-radius: 10px;
+        }
+        
+    }
+
+}
